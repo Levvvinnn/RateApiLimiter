@@ -49,7 +49,6 @@ class tokenBucket{
     }
 
     //set timer for cleanup
-    //finish this
     
 }
 
