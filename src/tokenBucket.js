@@ -40,6 +40,13 @@ class tokenBucket{
             return {allowed:"fail"}
         }
     }
+    cleanup(maxAge = 3600000){
+        for(const[clientId,bucket] of this.buckets.entries()){
+            if(Date.now()-bucket.lastRefill>maxAge){
+                this.buckets.delete(clientId);
+            }
+        }
+    }
     
 }
 
