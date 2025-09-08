@@ -56,6 +56,7 @@ class tokenBucket{
             clearInterval(this.cleanupTimer);
             this.cleanupTimer=null;
         }
+        this.buckets.clear();
     }  
 }
 export default tokenBucket;
