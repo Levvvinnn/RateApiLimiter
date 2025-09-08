@@ -54,7 +54,7 @@ class tokenBucket{
     end(){
         if(this.cleanupTimer){
             clearInterval(this.cleanupTimer);
-            
+            this.cleanup
         }
     }  
 }
