@@ -23,7 +23,7 @@ app.get('/api/users',apiLimiter,(req,res)=>{
         message:"Standard API endpoint"
     });
 });
-app.get('/api/private',apiLimiter,(req,res)=>{
+app.get('/api/private',strictLimiter,(req,res)=>{
     res.json({
         date:"Private information",
         message:"Strict API limiting applied"
