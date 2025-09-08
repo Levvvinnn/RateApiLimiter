@@ -16,5 +16,6 @@
     "url": "https://github.com/Levvvinnn/RateApiLimiter/issues"
   },
   "homepage": "https://github.com/Levvvinnn/RateApiLimiter#readme",
-  "description": ""
+  "description": "",
+  "type": "module"
 }
