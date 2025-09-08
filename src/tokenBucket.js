@@ -10,7 +10,7 @@ class tokenBucket{
 
         setInterval(()=>{
             this.cleanup();
-        })
+        },5)
     }
     getBucket(clientId){
         if(!this.buckets.has(clientId)){
