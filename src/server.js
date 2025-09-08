@@ -9,7 +9,7 @@ const rateLimiter=createRateLimit(5,1,1000);
 
 const publicLimiter = createRateLimit(10, 2, 1000);    
 const apiLimiter = createRateLimit(5, 1, 1000);       
-const strictLimiter = createRateLimit(3, 1, 5000);    // 3 tokens, refill 1 every 5 seconds (strict for sensitive ops)
+const strictLimiter = createRateLimit(3, 1, 5000);    
 
 app.use(rateLimiter);
 
