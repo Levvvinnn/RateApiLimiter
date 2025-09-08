@@ -13,7 +13,7 @@ function createRateLimit(capacity,refillRate,refillInterval){
                 error:"Rate limit exceeded",
                 message:"Too many requests",
                 retry:Math.ceil(bucket.refillInterval/1000),
-                tokens:result.tokens,
+                tokens:bucket.tokens,
                 limit:bucket.capacity
             });
 
