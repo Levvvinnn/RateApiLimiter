@@ -1,3 +1,3 @@
-import tokenBucket from "./tokenBucket";
+import tokenBucket from "./tokenBucket.js";
 import createRateLimit from "./rateLimitMiddleware.js";
 
