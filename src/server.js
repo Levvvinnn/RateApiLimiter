@@ -17,7 +17,7 @@ app.get('/',publicLimiter,(req,res)=>{
     res.json({message:"Public limiter-higher rate limit"});
 });
 
-app.get('/',publicLimiter,(req,res)=>{
+app.get('/api/users',publicLimiter,(req,res)=>{
     res.json({message:"Public limiter-higher rate limit"});
 });
 
