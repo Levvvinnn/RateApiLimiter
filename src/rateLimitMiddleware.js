@@ -12,7 +12,8 @@ function createRateLimit(capacity,refillRate,refillInterval){
             res.status(429).json({
                 error:"Rate limit exceeded",
                 message:"Too many requests",
-                retry:Math.ceil(this.refillInterval/1000)
+                retry:Math.ceil(this.refillInterval/1000),
+                
             });
 
         }
