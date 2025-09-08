@@ -8,5 +8,5 @@ const port=3000;
 const rateLimiter=createRateLimit(5,1,1000);
 app.use(rateLimiter);
 
-app.get('/')
+app.get('/',(req,res))
 
