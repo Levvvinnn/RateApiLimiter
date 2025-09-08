@@ -17,5 +17,8 @@
   },
   "homepage": "https://github.com/Levvvinnn/RateApiLimiter#readme",
   "description": "",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
