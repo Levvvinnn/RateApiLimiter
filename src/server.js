@@ -5,5 +5,5 @@ import express from "express";
 const app=express();
 const port=3000;
 
-const rateLimiter=createRateLimit
+const rateLimiter=createRateLimit(5,1,)
 
