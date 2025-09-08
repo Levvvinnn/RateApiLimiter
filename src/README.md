@@ -29,18 +29,7 @@ I set up different endpoints with different limits to show how it works:
 - `/api/users` - Standard API limit (5 requests) 
 - `/api/sensitive` - Strict limit for sensitive stuff (3 requests)
 
-Try hitting each one multiple times in Postman or just spam clicking refresh.
 
-## Code example
-
-```javascript
-// Create a rate limiter: 5 max tokens, refill 1 token every 1000ms
-const limiter = createRateLimit(5, 1, 1000);
-
-// Use it on your routes
-app.get('/api/stuff', limiter, (req, res) => {
-    res.json({message: 'This is rate limited!'});
-});
 ```
 
 When someone hits the limit, they get a 429 error with info about when they can try again.
