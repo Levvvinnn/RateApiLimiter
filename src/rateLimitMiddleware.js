@@ -12,7 +12,7 @@ function createRateLimit(capacity,refillRate,refillInterval){
             res.status(429).json({
                 error:"Too many requests",
                 msg:"Try later"
-            })
+            });
 
         }
 
