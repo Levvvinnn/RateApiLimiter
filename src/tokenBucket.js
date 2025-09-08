@@ -9,7 +9,7 @@ class tokenBucket{
         this.buckets=new Map();
 
         setInterval(()=>{
-            
+            this.cleanup
         })
     }
     getBucket(clientId){
