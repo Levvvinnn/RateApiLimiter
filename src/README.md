@@ -30,8 +30,6 @@ I set up different endpoints with different limits to show how it works:
 - `/api/sensitive` - Strict limit for sensitive stuff (3 requests)
 
 
-```
-
 When someone hits the limit, they get a 429 error with info about when they can try again.
 
 ## Why token bucket?
