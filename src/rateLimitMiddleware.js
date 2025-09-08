@@ -5,7 +5,7 @@ function createRateLimit(capacity,refillRate,refillInterval){
 
     return (req, res, next) => {
         const ip=req.ip;
-
+        const result = bucket.allowRequest(ip);
         if(bucket.allowRequest){
             
         }
