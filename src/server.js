@@ -23,6 +23,12 @@ app.get('/api/users',apiLimiter,(req,res)=>{
         message:"Standard API endpoint"
     });
 });
+app.get('/api/private',apiLimiter,(req,res)=>{
+    res.json({
+        users:[levin,kevin,devin],
+        message:"Standard API endpoint"
+    });
+});
 
 app.listen(port,()=>{
     console.log(`Server running on http://localhost:${port}`);
