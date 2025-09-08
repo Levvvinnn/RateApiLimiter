@@ -18,7 +18,8 @@ app.get('/',publicLimiter,(req,res)=>{
 });
 
 app.get('/api/users',apiLimiter,(req,res)=>{
-    res.json({message:"Standard API endpoint"});
+    res.json({
+        message:"Standard API endpoint"});
 });
 
 app.listen(port,()=>{
