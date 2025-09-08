@@ -12,5 +12,7 @@ app.get('/',(req,res)=>{
     res.json({message:"Hii this endpoint is ratelimited"});
 });
 
-app.listen(port,())
+app.listen(port,()=>{
+    
+})
 
