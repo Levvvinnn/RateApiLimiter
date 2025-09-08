@@ -7,6 +7,8 @@ class tokenBucket{
         this.refillRate=refillRate;
         this.refillInterval=refillInterval;
         this.buckets=new Map();
+
+        setInterval
     }
     getBucket(clientId){
         if(!this.buckets.has(clientId)){
