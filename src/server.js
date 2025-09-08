@@ -11,7 +11,6 @@ const publicLimiter = createRateLimit(10, 2, 1000);
 const apiLimiter = createRateLimit(5, 1, 1000);       
 const strictLimiter = createRateLimit(3, 1, 5000);    
 
-app.use(rateLimiter);
 
 app.get('/',publicLimiter,(req,res)=>{
     res.json({message:"Public limiter-higher rate limit"});
