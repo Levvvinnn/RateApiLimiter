@@ -9,6 +9,7 @@ function createRateLimit(capacity,refillRate,refillInterval){
         if(result.allowed==="success"){
             next();
         }else{
+            res.status()
 
         }
 
