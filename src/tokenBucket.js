@@ -8,7 +8,7 @@ class tokenBucket{
         this.refillInterval=refillInterval;
         this.buckets=new Map();
 
-        const cleanupTimer=setInterval(()=>{
+        this.cleanupTimer=setInterval(()=>{
             this.cleanup();
         },5*60*1000);
     }
