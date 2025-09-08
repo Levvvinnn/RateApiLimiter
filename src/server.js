@@ -19,7 +19,7 @@ app.get('/',publicLimiter,(req,res)=>{
 
 app.get('/api/users',apiLimiter,(req,res)=>{
     res.json({
-        users:["levin","kevin",devin],
+        users:["levin","kevin","devin"],
         message:"Standard API endpoint"
     });
 });
