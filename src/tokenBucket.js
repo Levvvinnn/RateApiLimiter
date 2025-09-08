@@ -50,9 +50,6 @@ class tokenBucket{
                 this.buckets.delete(clientId);
             }
         }
-    }
-
-    //set timer for cleanup
-    
+    }    
 }
 
