@@ -14,7 +14,7 @@ const strictLimiter = createRateLimit(3, 1, 5000);
 app.use(rateLimiter);
 
 app.get('/',publicLimiter,(req,res)=>{
-    res.json({message:"Hii this endpoint is ratelimited"});
+    res.json({message:"Public limiter-higher "});
 });
 
 app.listen(port,()=>{
