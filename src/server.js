@@ -6,6 +6,11 @@ const app=express();
 const port=3000;
 
 const rateLimiter=createRateLimit(5,1,1000);
+
+const publicLimiter = createRateLimit(10, 2, 1000);    // 10 tokens, refill 2 every 1 second (generous for public data)
+const apiLimiter = createRateLimit(5, 1, 1000);       // 5 tokens, refill 1 every 1 second (your current one)  
+const strictLimiter = createRateLimit(3, 1, 5000);    // 3 tokens, refill 1 every 5 seconds (strict for sensitive ops)
+
 app.use(rateLimiter);
 
 app.get('/',(req,res)=>{
