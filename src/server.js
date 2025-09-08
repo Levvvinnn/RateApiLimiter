@@ -25,7 +25,7 @@ app.get('/api/users',apiLimiter,(req,res)=>{
 });
 app.get('/api/private',apiLimiter,(req,res)=>{
     res.json({
-        users:[levin,kevin,devin],
+        date:[levin,kevin,devin],
         message:"Standard API endpoint"
     });
 });
