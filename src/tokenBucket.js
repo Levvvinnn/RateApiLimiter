@@ -53,7 +53,8 @@ class tokenBucket{
     }  
     end(){
         if(this.cleanupTimer){
-            clearInterval()
+            clearInterval(this.cleanupTimer);
+            
         }
     }  
 }
